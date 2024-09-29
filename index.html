@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Curso Rocketseat</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img src="avatar.png" alt="foto dev Caio Martins" />
+        <p>@caio_m37</p>
+      </div>
+      <div class="switch" onclick = "modeSwap()">
+        <button></button>
+        <span></span>
+      </div>
+      <nav>
+        <ul class="list">
+          <li class="list_iten">
+            <a href="https://fncaio.github.io/portifolio/" target="_blank">Meu Portifólio</a>
+          </li>
+
+          <li class="list_iten">
+            <a href="#" target="_blank">Meu Github</a>
+          </li>
+
+          <li class="list_iten">
+            <a href="#" target="_blank">Downoload do meu Currículo</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="links_social">
+        <a href="https://github.com/fncaio/" target="_blank"><ion-icon name="logo-github"
+          ></a
+        ></ion-icon>
+        <a
+            href="https://www.linkedin.com/in/caio-martins-33ba641b4/"
+            target="_blank"
+          ><ion-icon name="logo-linkedin"
+          ></a
+        ></ion-icon>
+        <a
+            href="https://api.whatsapp.com/send?phone=5521972554491"
+            target="_blank"
+          ><ion-icon name="logo-whatsapp"
+          ></a
+        ></ion-icon>
+      </section>
+      <footer class="rodape">
+        <p>Feito com &#9829; por Dev Caio Martins.</p>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+        function modeSwap(){
+          const html = document.documentElement
+
+          if (html.classList.contains('light')) {
+            html.classList.remove('light')
+          } else {
+            html.classList.add('light')
+          }
+        }
+    </script>
+  </body>
+</html>
