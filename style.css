@@ -80,6 +80,8 @@ body {
   left: 0;
   position: absolute;
   z-index: 1;
+
+  animation: slide-out 0.3s;
 }
 
 .switch span {
@@ -94,8 +96,7 @@ body {
 }
 
 .light .switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.3s forwards;
 }
 /*links list*/
 .list {
@@ -104,6 +105,9 @@ body {
   flex-direction: column;
   gap: 16px;
   margin-top: 25px;
+}
+.switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 .list_iten {
   font-family: "Inter", sans-serif;
@@ -171,3 +175,22 @@ body {
     --bg-url: url(bg-desktop-light.jpg)
   }
 }
+
+/* animações */
+@keyframes slide-in{
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+} 
+@keyframes slide-out{
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+} 
+
